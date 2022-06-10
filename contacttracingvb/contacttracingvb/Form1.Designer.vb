@@ -34,7 +34,7 @@ Partial Class form1
         Me.email = New System.Windows.Forms.Label()
         Me.addbx = New System.Windows.Forms.TextBox()
         Me.address = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.namebx = New System.Windows.Forms.TextBox()
         Me.namelabel = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.gendergroup.SuspendLayout()
@@ -153,12 +153,12 @@ Partial Class form1
         Me.address.TabIndex = 10
         Me.address.Text = "Address:"
         '
-        'TextBox1
+        'namebx
         '
-        Me.TextBox1.Location = New System.Drawing.Point(66, 67)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(211, 20)
-        Me.TextBox1.TabIndex = 20
+        Me.namebx.Location = New System.Drawing.Point(66, 67)
+        Me.namebx.Name = "namebx"
+        Me.namebx.Size = New System.Drawing.Size(211, 20)
+        Me.namebx.TabIndex = 20
         '
         'namelabel
         '
@@ -187,7 +187,7 @@ Partial Class form1
         Me.ClientSize = New System.Drawing.Size(524, 302)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.namelabel)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.namebx)
         Me.Controls.Add(Me.contacttracingapp)
         Me.Controls.Add(Me.email)
         Me.Controls.Add(Me.contact)
@@ -217,7 +217,7 @@ Partial Class form1
     Friend WithEvents email As Label
     Friend WithEvents addbx As TextBox
     Friend WithEvents address As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents namebx As TextBox
     Friend WithEvents namelabel As Label
     Friend WithEvents Label1 As Label
 End Class

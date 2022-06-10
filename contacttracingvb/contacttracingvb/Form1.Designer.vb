@@ -180,8 +180,11 @@ Partial Class form1
         Me.Controls.Add(Me.contactbx)
         Me.Controls.Add(Me.addbx)
         Me.Controls.Add(Me.sub1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "form1"
-        Me.Text = "Form1"
+        Me.Text = "Department of Health Contact Tracing"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

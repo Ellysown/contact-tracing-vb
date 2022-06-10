@@ -2,6 +2,9 @@
     Private Sub sub1_Click(sender As Object, e As EventArgs) Handles sub1.Click
         Dim personName As System.IO.StreamWriter
         Dim fullname As String = namebx.Text
+        If System.IO.File.Exists("D:\School chuchu\ELECS 3\" + fullname + ".txt") Then
+            System.IO.File.Delete("D:\School chuchu\ELECS 3\" + fullname + ".txt")
+        End If
         personName = My.Computer.FileSystem.OpenTextFileWriter("D:\School chuchu\ELECS 3\" + fullname + ".txt", True)
         personName.WriteLine("Full Name: " + namebx.Text)
         personName.WriteLine("Contact Number: " + contactbx.Text)

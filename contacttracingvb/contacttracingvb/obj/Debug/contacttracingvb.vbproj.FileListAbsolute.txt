@@ -1,0 +1,12 @@
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.vbproj.AssemblyReference.cache
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.Form1.resources
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.Resources.resources
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.vbproj.GenerateResource.cache
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.vbproj.CoreCompileInputs.cache
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\contacttracingvb.exe.config
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\contacttracingvb.exe
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\contacttracingvb.pdb
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\contacttracingvb.xml
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.exe
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.xml
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.pdb

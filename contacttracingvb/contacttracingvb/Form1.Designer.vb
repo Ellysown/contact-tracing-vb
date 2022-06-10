@@ -22,11 +22,8 @@ Partial Class form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form1))
         Me.contacttracingapp = New System.Windows.Forms.Label()
-        Me.female = New System.Windows.Forms.RadioButton()
-        Me.lgbt = New System.Windows.Forms.RadioButton()
-        Me.male = New System.Windows.Forms.RadioButton()
-        Me.gendergroup = New System.Windows.Forms.GroupBox()
         Me.sub1 = New System.Windows.Forms.Button()
         Me.contactbx = New System.Windows.Forms.TextBox()
         Me.contact = New System.Windows.Forms.Label()
@@ -37,63 +34,21 @@ Partial Class form1
         Me.namebx = New System.Windows.Forms.TextBox()
         Me.namelabel = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.gendergroup.SuspendLayout()
+        Me.genderism = New System.Windows.Forms.Label()
+        Me.genderbx = New System.Windows.Forms.TextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'contacttracingapp
         '
         Me.contacttracingapp.AutoSize = True
-        Me.contacttracingapp.Font = New System.Drawing.Font("Lucida Fax", 28.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.contacttracingapp.Location = New System.Drawing.Point(58, 9)
+        Me.contacttracingapp.Font = New System.Drawing.Font("Lucida Fax", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.contacttracingapp.Location = New System.Drawing.Point(85, 19)
         Me.contacttracingapp.Name = "contacttracingapp"
-        Me.contacttracingapp.Size = New System.Drawing.Size(414, 43)
+        Me.contacttracingapp.Size = New System.Drawing.Size(395, 33)
         Me.contacttracingapp.TabIndex = 18
-        Me.contacttracingapp.Text = "Contact Tracing App"
-        '
-        'female
-        '
-        Me.female.AutoSize = True
-        Me.female.Location = New System.Drawing.Point(74, 19)
-        Me.female.Name = "female"
-        Me.female.Size = New System.Drawing.Size(59, 17)
-        Me.female.TabIndex = 16
-        Me.female.TabStop = True
-        Me.female.Text = "Female"
-        Me.female.UseVisualStyleBackColor = True
-        '
-        'lgbt
-        '
-        Me.lgbt.AutoSize = True
-        Me.lgbt.Location = New System.Drawing.Point(139, 19)
-        Me.lgbt.Name = "lgbt"
-        Me.lgbt.Size = New System.Drawing.Size(77, 17)
-        Me.lgbt.TabIndex = 17
-        Me.lgbt.TabStop = True
-        Me.lgbt.Text = "LGBTQIA+"
-        Me.lgbt.UseVisualStyleBackColor = True
-        '
-        'male
-        '
-        Me.male.AutoSize = True
-        Me.male.Location = New System.Drawing.Point(20, 19)
-        Me.male.Name = "male"
-        Me.male.Size = New System.Drawing.Size(48, 17)
-        Me.male.TabIndex = 15
-        Me.male.TabStop = True
-        Me.male.Text = "Male"
-        Me.male.UseVisualStyleBackColor = True
-        '
-        'gendergroup
-        '
-        Me.gendergroup.Controls.Add(Me.male)
-        Me.gendergroup.Controls.Add(Me.lgbt)
-        Me.gendergroup.Controls.Add(Me.female)
-        Me.gendergroup.Location = New System.Drawing.Point(15, 141)
-        Me.gendergroup.Name = "gendergroup"
-        Me.gendergroup.Size = New System.Drawing.Size(226, 47)
-        Me.gendergroup.TabIndex = 19
-        Me.gendergroup.TabStop = False
-        Me.gendergroup.Text = "Gender"
+        Me.contacttracingapp.Text = "DOH Contact Tracing App"
         '
         'sub1
         '
@@ -180,11 +135,40 @@ Partial Class form1
         Me.Label1.Text = "Take care of yourself, " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "always rehydrate and " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "spray alcohol everytime " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "you com" &
     "e home"
         '
+        'genderism
+        '
+        Me.genderism.AutoSize = True
+        Me.genderism.Location = New System.Drawing.Point(12, 157)
+        Me.genderism.Name = "genderism"
+        Me.genderism.Size = New System.Drawing.Size(45, 13)
+        Me.genderism.TabIndex = 23
+        Me.genderism.Text = "Gender:"
+        '
+        'genderbx
+        '
+        Me.genderbx.Location = New System.Drawing.Point(66, 154)
+        Me.genderbx.Name = "genderbx"
+        Me.genderbx.Size = New System.Drawing.Size(50, 20)
+        Me.genderbx.TabIndex = 24
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(28, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(51, 49)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 25
+        Me.PictureBox1.TabStop = False
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(524, 302)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.genderbx)
+        Me.Controls.Add(Me.genderism)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.namelabel)
         Me.Controls.Add(Me.namebx)
@@ -196,20 +180,14 @@ Partial Class form1
         Me.Controls.Add(Me.contactbx)
         Me.Controls.Add(Me.addbx)
         Me.Controls.Add(Me.sub1)
-        Me.Controls.Add(Me.gendergroup)
         Me.Name = "form1"
         Me.Text = "Form1"
-        Me.gendergroup.ResumeLayout(False)
-        Me.gendergroup.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents contacttracingapp As Label
-    Friend WithEvents female As RadioButton
-    Friend WithEvents lgbt As RadioButton
-    Friend WithEvents male As RadioButton
-    Friend WithEvents gendergroup As GroupBox
     Friend WithEvents sub1 As Button
     Friend WithEvents contactbx As TextBox
     Friend WithEvents contact As Label
@@ -220,4 +198,7 @@ Partial Class form1
     Friend WithEvents namebx As TextBox
     Friend WithEvents namelabel As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents genderism As Label
+    Friend WithEvents genderbx As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

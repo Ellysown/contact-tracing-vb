@@ -1,8 +1,15 @@
 ﻿Public Class form1
     Private Sub sub1_Click(sender As Object, e As EventArgs) Handles sub1.Click
         Dim personName As System.IO.StreamWriter
-        personName = My.Computer.FileSystem.OpenTextFileWriter("D:\School chuchu\ELECS 3\RegisteredPerson.txt", True)
-        personName.WriteLine(namebx.Text)
+        Dim fullname As String = namebx.Text
+        personName = My.Computer.FileSystem.OpenTextFileWriter("D:\School chuchu\ELECS 3\" + fullname + ".txt", True)
+        personName.WriteLine("Full Name: " + namebx.Text)
+        personName.WriteLine("Contact Number: " + contactbx.Text)
+        personName.WriteLine("Address: " + addbx.Text)
+        personName.WriteLine("E-Mail Address: " + emailbx.Text)
+        personName.WriteLine("Gender: " + genderbx.Text)
+        personName.Close()
+        MessageBox.Show("Salamat sa pagtangkilik.")
 
     End Sub
 End Class

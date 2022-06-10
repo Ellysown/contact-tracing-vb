@@ -52,6 +52,7 @@ Partial Class form1
         '
         'sub1
         '
+        Me.sub1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.sub1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sub1.Location = New System.Drawing.Point(15, 194)
         Me.sub1.Name = "sub1"
@@ -127,6 +128,7 @@ Partial Class form1
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Label1.Font = New System.Drawing.Font("Microsoft Tai Le", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(286, 166)
         Me.Label1.Name = "Label1"
@@ -154,7 +156,7 @@ Partial Class form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(28, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(15, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(51, 49)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -165,6 +167,8 @@ Partial Class form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(524, 302)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.genderbx)

@@ -1,7 +1,8 @@
 ﻿Imports AForge
 Imports AForge.Video
 Imports AForge.Video.DirectShow
-
+Imports ZXing
+Imports ZXing.Aztec
 Public Class form1
     Dim cameradisplay As VideoCaptureDevice
     Dim cam As Bitmap
@@ -28,11 +29,30 @@ Public Class form1
             cameradisplay = camera.VideoDevice
             AddHandler cameradisplay.NewFrame, New NewFrameEventHandler(AddressOf camdisplay)
             cameradisplay.Start()
+            Timer.Start()
         End If
     End Sub
 
     Private Sub camdisplay(sender As Object, eventArgs As NewFrameEventArgs)
         cam = DirectCast(eventArgs.Frame.Clone(), Bitmap)
         picbx.Image = DirectCast(eventArgs.Frame.Clone(), Bitmap)
+    End Sub
+
+    Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
+        Dim qrreader As BarcodeReader = New BarcodeReader()
+
+        If picbx.Image IsNot Nothing Then
+            Dim output As Result = qrreader.Decode(DirectCast(picbx.Image, Bitmap))
+            If output IsNot Nothing Then
+                Dim dataoutput As String = output.ToString()
+                Dim part As String() = dataoutput.Split(",".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
+                namebx.Text = part(0)
+                contactbx.Text = part(1)
+                addbx.Text = part(2)
+                emailbx.Text = part(3)
+                genderbx.Text = part(4)
+                Timer.Stop()
+            End If
+        End If
     End Sub
 End Class

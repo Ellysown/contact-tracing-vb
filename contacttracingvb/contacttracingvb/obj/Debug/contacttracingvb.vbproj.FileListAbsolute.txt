@@ -17,3 +17,6 @@ C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracing
 C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\AForge.Video.xml
 C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\AForge.Video.DirectShow.xml
 C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.vbproj.CopyComplete
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\zxing.dll
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\zxing.pdb
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\zxing.xml

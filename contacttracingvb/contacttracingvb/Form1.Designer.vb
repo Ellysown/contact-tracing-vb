@@ -22,6 +22,7 @@ Partial Class form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form1))
         Me.contacttracingapp = New System.Windows.Forms.Label()
         Me.sub1 = New System.Windows.Forms.Button()
@@ -39,6 +40,7 @@ Partial Class form1
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.picbx = New System.Windows.Forms.PictureBox()
         Me.cambtn = New System.Windows.Forms.Button()
+        Me.Timer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picbx, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -184,6 +186,10 @@ Partial Class form1
         Me.cambtn.Text = "Take Pic"
         Me.cambtn.UseVisualStyleBackColor = True
         '
+        'Timer
+        '
+        Me.Timer.Interval = 500
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -233,4 +239,5 @@ Partial Class form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents picbx As PictureBox
     Friend WithEvents cambtn As Button
+    Friend WithEvents Timer As Timer
 End Class

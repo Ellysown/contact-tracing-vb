@@ -37,7 +37,10 @@ Partial Class form1
         Me.genderism = New System.Windows.Forms.Label()
         Me.genderbx = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.picbx = New System.Windows.Forms.PictureBox()
+        Me.cambtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picbx, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'contacttracingapp
@@ -163,12 +166,31 @@ Partial Class form1
         Me.PictureBox1.TabIndex = 25
         Me.PictureBox1.TabStop = False
         '
+        'picbx
+        '
+        Me.picbx.Location = New System.Drawing.Point(25, 315)
+        Me.picbx.Name = "picbx"
+        Me.picbx.Size = New System.Drawing.Size(235, 224)
+        Me.picbx.TabIndex = 26
+        Me.picbx.TabStop = False
+        '
+        'cambtn
+        '
+        Me.cambtn.Location = New System.Drawing.Point(105, 554)
+        Me.cambtn.Name = "cambtn"
+        Me.cambtn.Size = New System.Drawing.Size(81, 37)
+        Me.cambtn.TabIndex = 27
+        Me.cambtn.Text = "Take Pic"
+        Me.cambtn.UseVisualStyleBackColor = True
+        '
         'form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(524, 302)
+        Me.ClientSize = New System.Drawing.Size(536, 603)
+        Me.Controls.Add(Me.cambtn)
+        Me.Controls.Add(Me.picbx)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.genderbx)
         Me.Controls.Add(Me.genderism)
@@ -189,6 +211,7 @@ Partial Class form1
         Me.Name = "form1"
         Me.Text = "Department of Health Contact Tracing"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picbx, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -207,4 +230,6 @@ Partial Class form1
     Friend WithEvents genderism As Label
     Friend WithEvents genderbx As TextBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents picbx As PictureBox
+    Friend WithEvents cambtn As Button
 End Class

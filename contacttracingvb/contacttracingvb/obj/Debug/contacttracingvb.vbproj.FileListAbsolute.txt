@@ -10,3 +10,10 @@ C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracing
 C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.exe
 C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.xml
 C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.pdb
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\AForge.dll
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\AForge.Video.dll
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\AForge.xml
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\AForge.Video.xml
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Chellsy\source\repos\contact-tracing-vb\contacttracingvb\contacttracingvb\obj\Debug\contacttracingvb.vbproj.CopyComplete

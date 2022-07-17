@@ -168,15 +168,16 @@ Partial Class form1
         '
         'picbx
         '
-        Me.picbx.Location = New System.Drawing.Point(25, 315)
+        Me.picbx.Location = New System.Drawing.Point(30, 286)
         Me.picbx.Name = "picbx"
         Me.picbx.Size = New System.Drawing.Size(235, 224)
+        Me.picbx.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.picbx.TabIndex = 26
         Me.picbx.TabStop = False
         '
         'cambtn
         '
-        Me.cambtn.Location = New System.Drawing.Point(105, 554)
+        Me.cambtn.Location = New System.Drawing.Point(102, 516)
         Me.cambtn.Name = "cambtn"
         Me.cambtn.Size = New System.Drawing.Size(81, 37)
         Me.cambtn.TabIndex = 27
@@ -188,7 +189,7 @@ Partial Class form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(536, 603)
+        Me.ClientSize = New System.Drawing.Size(536, 556)
         Me.Controls.Add(Me.cambtn)
         Me.Controls.Add(Me.picbx)
         Me.Controls.Add(Me.PictureBox1)
